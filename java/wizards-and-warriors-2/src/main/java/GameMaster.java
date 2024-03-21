@@ -11,6 +11,9 @@ public class GameMaster {
     }
 
     // TODO: define a 'describe' method that returns a description of a TravelMethod
+    public void describe(TravelMethod travelMethod) {
+        System.out.printf("You're traveling to your destination by %s.", travelMethod);
+    }
 
     // TODO: define a 'describe' method that returns a description of a Character, Destination and TravelMethod
 
