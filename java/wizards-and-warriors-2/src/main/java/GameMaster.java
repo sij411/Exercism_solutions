@@ -1,26 +1,29 @@
 public class GameMaster {
-
+    // return type : String..?
     // TODO: define a 'describe' method that returns a description of a Character
-    public void describe(Character character) {
-        System.out.print("You're a level " + character.getLevel() + " " + character.getCharacterClass() + " " + "with " + character.getHitPoints() + " hit points.");
+    public String describe(Character character) {
+        return "You're a level " + character.getLevel() + " " + character.getCharacterClass() + " " + "with " + character.getHitPoints() + " hit points.";
     }
 
     // TODO: define a 'describe' method that returns a description of a Destination
-    public void describe(Destination destination) {
-        System.out.print("You've arrived at " + destination.getName() +", which has " + destination.getInhabitants() + " inhabitants.");
+    public String describe(Destination destination) {
+        return "You've arrived at " + destination.getName() +", which has " + destination.getInhabitants() + " inhabitants.";
     }
 
     // TODO: define a 'describe' method that returns a description of a TravelMethod
-    public void describe(TravelMethod travelMethod) {
-        System.out.printf("You're traveling to your destination by %s.", travelMethod);
+    public String describe(TravelMethod travelMethod) {
+        if (travelMethod == TravelMethod.WALKING)
+            return String.format("You're traveling to your destination by %s.", travelMethod.toString().toLowerCase());
+        return String.format("You're traveling to your destination on %s.", travelMethod.toString().toLowerCase());
     }
 
     // TODO: define a 'describe' method that returns a description of a Character, Destination and TravelMethod
-    public void describe(Character character, Destination destination, TravelMethod travelMethod) {
-        describe(character);
-        describe(travelMethod);
-        describe(destination);
+    public String describe(Character character, Destination destination, TravelMethod travelMethod) {
+        return describe(character) + " " + describe(travelMethod) + " " + describe(destination);
     }
 
     // TODO: define a 'describe' method that returns a description of a Character and Destination
+    public String describe(Character character, Destination destination) {
+        return describe(character) + " " + describe(TravelMethod.WALKING) + " " + describe(destination);
+    }
 }
