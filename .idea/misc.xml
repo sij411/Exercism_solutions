@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/java/leap" />
+    <file type="web" url="file://$PROJECT_DIR$/java/reverse-string" />
     <file type="web" url="file://$PROJECT_DIR$/java/secrets" />
     <file type="web" url="file://$PROJECT_DIR$/java/wizards-and-warriors-2" />
   </component>
