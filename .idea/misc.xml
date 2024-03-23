@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/java/leap" />
     <file type="web" url="file://$PROJECT_DIR$/java/reverse-string" />
     <file type="web" url="file://$PROJECT_DIR$/java/secrets" />
+    <file type="web" url="file://$PROJECT_DIR$/java/two-fer" />
     <file type="web" url="file://$PROJECT_DIR$/java/wizards-and-warriors-2" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
