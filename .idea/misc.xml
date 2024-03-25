@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/java/acronym" />
     <file type="web" url="file://$PROJECT_DIR$/java/armstrong-numbers" />
+    <file type="web" url="file://$PROJECT_DIR$/java/darts" />
     <file type="web" url="file://$PROJECT_DIR$/java/leap" />
     <file type="web" url="file://$PROJECT_DIR$/java/reverse-string" />
     <file type="web" url="file://$PROJECT_DIR$/java/secrets" />
