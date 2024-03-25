@@ -17,12 +17,21 @@ class Acronym {
     }
 
     String tla(String phrase) {
-        phrase = phrase.replaceAll("[^A-Za-z0-9]", " ");
+        phrase = phrase.replace("-", " ").replace("_", " ");
+        System.out.println(phrase);
         String[] space = phrase.split(" ");
 
+        String tla = "";
+
+        for (String word : space) {
+            if (word.isEmpty())
+                continue;
+            tla += word.charAt(0);
+
+        }
 
 
-        return Arrays.toString(space);
+        return tla.toUpperCase();
     }
 
 }
