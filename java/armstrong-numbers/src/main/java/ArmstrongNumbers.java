@@ -25,3 +25,31 @@ class ArmstrongNumbers {
 
 
 }
+/*
+ Solutions that got most reps
+* import java.util.Arrays;
+import java.util.function.Function;
+// import java.util.List;
+
+class ArmstrongNumbers {
+
+    boolean isArmstrongNumber(int numberToCheck) {
+
+      if (numberToCheck < 10) return true;
+      var digitCount = (int)Math.log10(numberToCheck) + 1;
+      var num = numberToCheck;
+      var pow_total = 0;
+      for (;num > 0;) {
+        var pow_temp = num % 10;
+        var pow_temp_total = 1;
+        for (var i = 0; i < digitCount; i++) {
+          pow_temp_total *= pow_temp;
+        }
+        pow_total += pow_temp_total;
+        num /= 10;
+      }
+      return numberToCheck == pow_total;
+    }
+}
+*
+* */
