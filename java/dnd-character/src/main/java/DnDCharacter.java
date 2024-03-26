@@ -16,14 +16,17 @@ class DnDCharacter {
         this.intelligence = ability(rollDice());
         this.wisdom = ability(rollDice());
         this.charisma = ability(rollDice());
-        this.hitpoints = modifier(this.constitution);
+        this.hitpoints = 10 + modifier(this.constitution);
     }
 
     int ability(List<Integer> scores) {
-        Collections.sort(scores);
+        List<Integer> modify = new ArrayList<>(scores); // when you call the scores -> which is referenced type data,
+        // so you should copy all data and save to modifiable list because java doesn't know scores itself is unmodifiable or not
+        Collections.sort(modify);
+        Collections.reverse(modify);
         int sum = 0;
-        for (int i = 1; i < scores.size(); i++) {
-            sum += scores.get(i);
+        for (int i = 0; i < modify.size() - 1; i++) {
+            sum += modify.get(i);
         }
 
         return sum;
@@ -42,7 +45,8 @@ class DnDCharacter {
         // hitpoints = 10 + constitution modifier
         // modifier = (constitution - 10) / 2 round down.
         // (3 - 10) / 2 -> -3.5 round down -> -4
-        return Math.floorDiv((input - 10), 2);
+
+        return Math.floorDiv((input - 10),2);
     }
 
     int getStrength() {
