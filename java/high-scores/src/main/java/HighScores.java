@@ -1,25 +1,39 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 class HighScores {
-
+    // return the highest score from the list
+    // return the last added score
+    // return the three highest score
+    private List<Integer> highScores;
     public HighScores(List<Integer> highScores) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.highScores = highScores;
     }
 
     List<Integer> scores() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return highScores;
     }
 
     Integer latest() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return highScores.get(highScores.size()-1);
     }
 
     Integer personalBest() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        Integer best = 0;
+        for (Integer score : highScores) {
+            if (best < score) {
+                best = score;
+            }
+        }
+        return best;
     }
 
     List<Integer> personalTopThree() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        List<Integer> scores = new ArrayList<>(highScores);
+        Collections.sort(scores);
+        Collections.reverse(scores);
+        return scores.subList(0, Math.min(scores.size(), 3));
     }
 
 }
