@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ResistorColorDuoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-30T08:33:49" hostname="Jiwons-MacBook-Air.local" time="0.037">
+  <properties/>
+  <testcase name="testIgnoreAdditionalColors()" classname="ResistorColorDuoTest" time="0.037"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

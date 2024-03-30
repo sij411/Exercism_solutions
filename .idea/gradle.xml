@@ -76,6 +76,24 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/resistor-color-duo" />
+        <option name="gradleJvm" value="openjdk-20" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/resistor-color-duo" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/resistor-color-trio" />
+        <option name="gradleJvm" value="openjdk-20" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/resistor-color-trio" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/reverse-string" />
         <option name="gradleJvm" value="openjdk-20" />
         <option name="modules">
