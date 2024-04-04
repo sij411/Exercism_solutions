@@ -31,6 +31,15 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/difference-of-squares" />
+        <option name="gradleJvm" value="openjdk-20" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/difference-of-squares" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/dnd-character" />
         <option name="gradleJvm" value="openjdk-20" />
         <option name="modules">
